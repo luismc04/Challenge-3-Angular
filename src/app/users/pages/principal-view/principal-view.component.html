@@ -1,0 +1,42 @@
+
+@if (!anyQuery) {
+<div class="contenedor">
+
+
+  <div class="cards">
+   <h2>Top Users</h2>
+    <div class="rankings">
+        @for (user of topThreeUsers; track $index;let first = $first) {
+    <div [routerLink]="'/user-detail/'+ user.id" [ngClass]="first ? '': ''" class="ranking">{{$index +1}}. <span>&#64;{{user.username}}</span></div>
+        }
+    </div>
+  </div>
+  <div class="cards">
+    <h2>Famous Post</h2>
+    <div class="rankings">
+      @for (post of topThreePosts; track $index;let first = $first) {
+        <div [ngClass]="first ? '': ''" class="ranking">{{$index +1}}.{{post.title | titlecase}}</div>
+      }
+    </div>
+  </div>
+  <div class="cards">
+    <h2>Users Reviews</h2>
+    <div class="rankings">
+      @for (user of topUsersMoreReviews; track $index;let first = $first) {
+        <div [routerLink]="'/user-detail/'+ user.id" [ngClass]="first ? '': ''" class="ranking">{{$index +1}}. <span>&#64;{{user.username}}</span></div>
+      }
+
+    </div>
+  </div>
+</div>
+}@else {
+<div class="container-cards">
+  <div class="rows">
+    <app-cards-users/>
+  </div>
+
+  <div class="rows">
+    <app-cards-posts/>
+  </div>
+</div>
+}

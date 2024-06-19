@@ -1,0 +1,18 @@
+div{
+  display: grid;
+  padding: 30px;
+  background: white;
+  cursor: pointer;
+
+  height: 200px;
+  margin: 25px;
+  box-shadow:  2px 2px 2px #00000045;
+  transition: 0.5s;
+}
+div:hover{
+  transform: scale(1.05);
+  transition: 0,5s;
+}
+
+
+

@@ -1,0 +1,38 @@
+div{
+  display: grid;
+  background: white;
+  height: 200px;
+  margin: 25px;
+  box-shadow:  2px 2px 2px #00000045;
+  transition: 0.5s;
+  border: 1px solid black;
+  cursor: pointer;
+}
+div:hover{
+  transform: scale(1.05);
+  transition: 0,5s;
+}
+h1{
+  align-self: center;
+  text-align: center;
+  /* background: -webkit-linear-gradient( darkblue, darkorchid);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  transition: 0.8s;
+  justify-self: center;
+  z-index: 999;
+  position: fixed;
+  margin: 0px;
+}
+
+div:hover span{
+  transition: 0.5s;
+  height: 200px;
+}
+
+span{
+  position: relative;
+  background: #a3ffd6;
+  height: 3px;
+  transition: 0.5s;
+}

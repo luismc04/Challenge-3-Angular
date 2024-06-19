@@ -1,0 +1,49 @@
+.header{
+  height: 108px;
+  display: grid;
+  grid-template-columns: 2fr 1fr  6fr;
+  align-content: center;
+
+}
+.logoGroup{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+img{
+  height: 50px;
+  align-self: center;
+  margin-right: 20px;
+}
+.inputGroup{
+  align-content: center;
+  justify-content: right;
+  display: flex;
+  margin-right: 100px;
+}
+.lupa{
+  height: 25px;
+  width: 25px;
+  position: absolute;
+}
+input{
+  width: 450px;
+  height: 15px;
+  border-radius: 50px;
+  background: #d3d3d3;
+  border: 0px;
+  align-self: center;
+  padding: 15px;
+}
+input:focus{
+  transition: 1s;
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+
+}
+h1{
+  align-self: center;
+}

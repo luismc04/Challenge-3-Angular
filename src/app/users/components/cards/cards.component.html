@@ -1,0 +1,7 @@
+
+@for (user of users; track $index) {
+  <div [routerLink]="'/user-detail/'+ user.id">
+    <span></span>
+    <h1>&#64;{{user.username}}</h1>
+  </div>
+}

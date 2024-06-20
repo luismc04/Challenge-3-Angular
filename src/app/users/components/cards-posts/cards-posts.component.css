@@ -6,7 +6,7 @@ div{
 
   height: 200px;
   margin: 25px;
-  box-shadow:  2px 2px 2px #00000045;
+  box-shadow:  5px 4px 7px black;
   transition: 0.5s;
 }
 div:hover{

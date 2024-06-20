@@ -3,9 +3,8 @@ div{
   background: white;
   height: 200px;
   margin: 25px;
-  box-shadow:  2px 2px 2px #00000045;
+  box-shadow: 5px 4px 7px black;
   transition: 0.5s;
-  border: 1px solid black;
   cursor: pointer;
 }
 div:hover{
@@ -15,13 +14,10 @@ div:hover{
 h1{
   align-self: center;
   text-align: center;
-  /* background: -webkit-linear-gradient( darkblue, darkorchid);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
   transition: 0.8s;
   justify-self: center;
   z-index: 999;
-  position: fixed;
+  position: absolute;
   margin: 0px;
 }
 
@@ -33,6 +29,6 @@ div:hover span{
 span{
   position: relative;
   background: #a3ffd6;
-  height: 3px;
+  height: 0px;
   transition: 0.5s;
 }

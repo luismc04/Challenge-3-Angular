@@ -31,12 +31,25 @@
 </div>
 }@else {
 <div class="container-cards">
-  <div class="rows">
-    <app-cards-users/>
-  </div>
+  @if (users.length > 0 && isLoaded) {
+    <h1>Usuarios</h1>
 
-  <div class="rows">
-    <app-cards-posts/>
-  </div>
+    <div class="rows">
+      <app-cards-users/>
+    </div>
+  }
+  @if(!isLoaded){
+    <h1>Cargando ...</h1>
+  }
+  @if(isLoaded && users.length ==0 && posts.length == 0){
+    <h1 class="red">No hay posts ni usuarios con ese nombre</h1>
+  }
+  @if (posts.length > 0 && isLoaded) {
+    <h1>Posts</h1>
+
+    <div class="rows">
+      <app-cards-posts/>
+    </div>
+  }
 </div>
 }

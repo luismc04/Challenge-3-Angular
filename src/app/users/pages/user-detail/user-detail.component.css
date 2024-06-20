@@ -1,0 +1,73 @@
+.contenedor{
+  display:  grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  margin-top: 20px;
+}
+.body{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+h1{
+  align-self: flex-end;
+  padding-left: 50px;
+  margin-bottom: 0px;
+}
+h3{
+    align-self: flex-start;
+    padding-left: 50px;
+}
+h2{
+  margin: 50px;
+  width: fit-content;
+  border-bottom: 2px solid red;
+}
+
+.buisness-col{
+  justify-self: right;
+  background: white;
+  height: 450px;
+  width: 90%;
+  box-shadow: 5px 4px 7px #0000004d;
+}
+.personal-col{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.personal-col div{
+  height: fit-content;
+  box-shadow: 5px 4px 7px #0000004d;
+  background-color: white;
+}
+.personal-col div:nth-child(2){
+  height: 100%;
+
+
+}
+p{
+  margin-left: 50px;
+  width: fit-content;
+  margin-top: 20px;
+}
+.subTitleCompany{
+  border-bottom: 2px solid red;
+  margin-top: 30px;
+}
+.companyDetails{
+  margin-left: 75px;
+}
+
+span{
+  text-decoration: underline;
+  font-weight: bolder;
+
+}
+
+.content{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.header{
+  display: grid;
+}

@@ -13,6 +13,7 @@ export class PrincipalViewComponent implements OnInit, AfterContentChecked {
 
   private usersService = inject(UsersServiceService);
 
+  public isLoaded : boolean = false
   public anyQuery : string = ''
 
   public users    : User[] = [];
@@ -32,6 +33,7 @@ export class PrincipalViewComponent implements OnInit, AfterContentChecked {
   ngOnInit(): void {
 
 
+
     if(this.users.length < 1){
       this.usersService.getAllUsers();
       this.usersService.getAllUsersPost();
@@ -43,9 +45,12 @@ export class PrincipalViewComponent implements OnInit, AfterContentChecked {
     if(localStorage.getItem('posts')){
       this.posts = JSON.parse(localStorage.getItem('posts')!)
     }
+    this.usersService.find(this.usersService.request)
+
   }
 
   ngAfterContentChecked(){
+    this.isLoaded = this.usersService.isLoaded
     this.users =  this.usersService.users;
     this.posts = this.usersService.posts;
     this.comments = this.usersService.comments;
@@ -56,6 +61,7 @@ export class PrincipalViewComponent implements OnInit, AfterContentChecked {
       this.topPosts();
       this.topUserReviews();
     }
+
   }
 
   topUsers(){

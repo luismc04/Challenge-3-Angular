@@ -1,9 +1,9 @@
 .header{
-  height: 108px;
+  height: 105px;
   display: grid;
   grid-template-columns: 2fr 1fr  6fr;
   align-content: center;
-
+  border-bottom: 3px solid;
 }
 .logoGroup{
   display: flex;

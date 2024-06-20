@@ -1,1 +1,1 @@
-  // npx json-server db.json
+To run json server :  npx json-server db.json
